@@ -1,0 +1,11 @@
+python 4_edit_model.py \
+    --priv_data_path /home/wuxinwei/projects/unlearn4llm/get_memorization/qwen1.5b/qwen1.5b_em_memorized_TEL.txt \
+    --validation_data_path /home/wuxinwei/projects/unlearn4llm/data/enron/validate.txt \
+    --model_name_or_path /data2/wuxinwei/model/enron-qwen2.5-1.5B/epoch_0 \
+    --privacy_neuron_path /home/wuxinwei/projects/privacy-editing/pn_result/filtered-pn-qwen2.5-all.txt \
+    --model_name qwen2.5 \
+    --steer_words 0000 \
+    --gpus 0 \
+    --max_seq_length 128\
+    --batch_size 48 \
+    --editing_kind patching \
